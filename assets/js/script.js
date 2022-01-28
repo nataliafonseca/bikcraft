@@ -22,3 +22,21 @@ function activeRadio(param) {
 }
 
 params.forEach(activeRadio);
+
+// FAQ clicável
+
+const faq = document.querySelectorAll(".faq button");
+
+function toggleAnswer(event) {
+  const question = event.currentTarget;
+  const answerId = question.getAttribute("aria-controls");
+  const answer = document.getElementById(answerId);
+  answer.classList.toggle("ativa");
+  question.setAttribute("aria-expanded", answer.classList.contains("ativa"));
+}
+
+function faqEvents(question) {
+  question.addEventListener("click", toggleAnswer);
+}
+
+faq.forEach(faqEvents);
