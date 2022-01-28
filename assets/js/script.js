@@ -40,3 +40,21 @@ function faqEvents(question) {
 }
 
 faq.forEach(faqEvents);
+
+// Galeria de Bicicletas
+
+const gallery = document.querySelectorAll(".bicicleta-imagens img");
+const galleryContainer = document.querySelector(".bicicleta-imagens");
+
+function changeImage(event) {
+  const img = event.currentTarget;
+  if (matchMedia("(min-width: 1000px)").matches) {
+    galleryContainer.prepend(img);
+  }
+}
+
+function galleryEvents(img) {
+  img.addEventListener("click", changeImage);
+}
+
+gallery.forEach(galleryEvents);
