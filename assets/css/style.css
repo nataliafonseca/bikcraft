@@ -3,6 +3,7 @@
 @import url("./utilidades/cores.css");
 @import url("./utilidades/tipografia.css");
 @import url("./utilidades/componentes.css");
+@import url("./utilidades/formulario.css");
 @import url("./global/header.css");
 @import url("./global/footer.css");
 
@@ -24,6 +25,10 @@
 @import url("./seguros/seguros.css");
 @import url("./seguros/vantagens.css");
 @import url("./seguros/faq.css");
+
+/* Contato */
+@import url("./contato/contato.css");
+@import url("./contato/lojas.css");
 
 /* Termos */
 @import url("./termos/termos.css");
