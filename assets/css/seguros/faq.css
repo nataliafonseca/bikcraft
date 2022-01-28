@@ -53,10 +53,13 @@
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
+}
+
+.js .faq dd {
   display: none;
 }
 
-.faq dd.ativa {
+.js .faq dd.ativa {
   display: block;
 }
 
